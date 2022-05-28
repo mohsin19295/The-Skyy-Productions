@@ -198,22 +198,40 @@ nav {
 } */
 
 .works_wrapper {
-  display: grid;
   grid-template-columns: repeat(4, 1fr);
   width: 100%;
   gap: 50px;
   padding: 0 50px;
+  display: grid;
 }
 
+.display_none{
+  display: none;
+}
 
 /* Extra */
-.work_card {
+/* .work_card {
   border-radius: 4px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   color: #fff;
   transition: 0.3s ease-in;
+} */
+
+#see_more{
+  margin-top: 5%;
+}
+
+#see_more button{
+  padding: 10px;
+  background: linear-gradient(to right, #ff0844, #f7673c);
+  color: #161718;
+  font-weight: 600;
+  font-size: 20px;
+  border:0;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1300px) {

@@ -30,3 +30,17 @@ const hideMobileMenu = () => {
 };
 menuLinks.addEventListener("click", hideMobileMenu);
 navLogo.addEventListener("click", hideMobileMenu);
+
+
+// See more button
+let init = 4;
+let seeMore = document.getElementById("see_more");
+
+seeMore.onclick = ()=>{
+  let hiddenData = [...document.querySelectorAll('.display_none')];
+  console.log('hiddenData:', hiddenData.length)
+  for (let i = init; i<init+4; i++){
+    hiddenData[i].style.display = "grid"
+  }
+  init+=4;
+}
