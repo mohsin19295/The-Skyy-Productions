@@ -9,7 +9,6 @@ const mobileMenu = () => {
 };
 menu.addEventListener("click", mobileMenu);
 
-
 // Adding 'Click Event' to menu items
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (event) {
@@ -31,16 +30,27 @@ const hideMobileMenu = () => {
 menuLinks.addEventListener("click", hideMobileMenu);
 navLogo.addEventListener("click", hideMobileMenu);
 
-
 // See more button
 let init = 4;
 let seeMore = document.getElementById("see_more");
 
-seeMore.onclick = ()=>{
-  let hiddenData = [...document.querySelectorAll('.display_none')];
-  console.log('hiddenData:', hiddenData.length)
-  for (let i = init; i<init+4; i++){
-    hiddenData[i].style.display = "grid"
+seeMore.onclick = () => {
+  let hiddenData = [...document.querySelectorAll(".display_none")];
+  let i = init;
+  while (i < init + 4) {
+    hiddenData[i].style.display = "grid";
+
+    // When last data occurs
+    if (i == hiddenData.length - 1) {
+      seeMore.disabled = "true";
+      seeMore.innerHTML = "No more data";
+      seeMore.style.color = "#f5f5f5";
+      seeMore.style.cursor = "none";
+      seeMore.style.background =
+        "linear-gradient(to right, #161718, #161718a6)";
+        break;
+    }
+    i++;
   }
-  init+=4;
-}
+  init += 4;
+};

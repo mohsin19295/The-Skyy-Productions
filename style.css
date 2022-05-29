@@ -219,11 +219,11 @@ nav {
   transition: 0.3s ease-in;
 } */
 
-#see_more{
+button{
   margin-top: 5%;
 }
 
-#see_more button{
+button{
   padding: 10px;
   background: linear-gradient(to right, #ff0844, #f7673c);
   color: #161718;
