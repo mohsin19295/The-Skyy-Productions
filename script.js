@@ -31,26 +31,19 @@ menuLinks.addEventListener("click", hideMobileMenu);
 navLogo.addEventListener("click", hideMobileMenu);
 
 // See more button
-let init = 4;
 let seeMore = document.getElementById("see_more");
+let init = 3;
 
 seeMore.onclick = () => {
-  let hiddenData = [...document.querySelectorAll(".display_none")];
-  let i = init;
-  while (i < init + 4) {
+  let hiddenData = [...document.querySelectorAll(".work_section .works_wrapper .work_card")];
+  for (var i = init; i < init + 3; i++) {
     hiddenData[i].style.display = "grid";
 
     // When last data occurs
     if (i == hiddenData.length - 1) {
-      seeMore.disabled = "true";
-      seeMore.innerHTML = "No more data";
-      seeMore.style.color = "#f5f5f5";
-      seeMore.style.cursor = "none";
-      seeMore.style.background =
-        "linear-gradient(to right, #161718, #161718a6)";
-        break;
+      seeMore.style.display = "none";
+      break;
     }
-    i++;
   }
-  init += 4;
+  init += 3;
 };
