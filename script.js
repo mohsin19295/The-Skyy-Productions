@@ -47,3 +47,8 @@ seeMore.onclick = () => {
   }
   init += 3;
 };
+
+
+// Chat functionality
+// const whatsapp = document.getElementById('whatsapp')
+// whatsapp

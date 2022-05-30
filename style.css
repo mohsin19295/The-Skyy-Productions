@@ -17,9 +17,9 @@ main section{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem 0 1rem 0;
-  margin-bottom: 3rem;
-  box-shadow: 0 10px 5px #5a5959;
+  padding: 5rem 0 2rem 0;
+  margin-bottom: 1rem;
+  box-shadow: 0 5px 5px #3d3d3d;
   border: 0;
 }
 
@@ -32,7 +32,7 @@ nav {
   top: 0;
   font-size: 1.2rem;
   margin-bottom: 2rem;
-  box-shadow: 0 20px 5px #5a595959;
+  box-shadow: 0 5px 5px #3333337a;
   z-index: 999;
 }
 
@@ -159,7 +159,7 @@ nav {
 /* Works section */
 .works_wrapper {
   grid-template-columns: repeat(3, 1fr);
-  width: 100%;
+  /* width: 100%; */
   gap: 50px;
   padding: 0 50px;
   display: grid;
@@ -168,14 +168,15 @@ nav {
 
 .work_card{
   display: grid;
-  border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0.5);
 }
 
- .youtube_video{
+.youtube_video{
   position: relative;
   overflow: hidden;
   padding-top: 56%;
+  border-radius: 5px;
 }
 
 
@@ -245,7 +246,7 @@ nav {
 .associates_wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  width: 100%;
+  /* width: 100%; */
   gap: 50px;
   padding: 0 50px;
 }
@@ -277,7 +278,7 @@ nav {
 .companies_wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  width: 100%;
+  /* width: 100%; */
   gap: 50px;
   padding: 0 50px;
 }
@@ -314,9 +315,10 @@ nav {
   gap: 20px;
 }
 
-.about_container li{
+.about_container p{
   color: #fff;
   line-height: 1.5;
+  font-size: 18px;
 }
 
 /* Home Section + Type Writer effect */
@@ -332,23 +334,25 @@ nav {
 }
 
 .home_typewriter{
-  width:100%;
-  padding: 0 10px;
+  padding: 0 20px;
+  margin: 30px 0 20px 0;
 }
 
 .home_typewriter h2 {
   color: #fff;
   text-align: center;
-  overflow: hidden;
+  /* overflow: hidden;
   white-space: nowrap;
   margin: 30px auto;
   animation: 
-    typing 3.5s steps(30, end), .5s step-end infinite;
+    typing 3.5s steps(30, end), .5s step-end infinite; */
 }
 
 .typewriter h1 {
   color: #fff;
   text-align: center;
+  font-size: 50px;
+  font-weight: 800;
   overflow: hidden;
   white-space: nowrap;
   margin: 0 0 30px 0;
@@ -368,8 +372,8 @@ footer{
   padding:20px;
   display: flex;
   margin-top: 50px;
-  gap: 50px;
-  background: #131313;
+  justify-content:space-between;
+  /* background: #131313; */
 }
 
 #right_footer{
@@ -379,34 +383,41 @@ footer{
   flex-direction: column;
   color: #fff;
   gap: 20px;
+  line-height: 1.5;
+  border-right: 1px solid rgba(255, 255, 255, 0.308);
 }
 
 #left_footer{
   padding: 0 20px;
   color: #fff;
-  width: 40%;
+  width: 42%;
   display:flex;
   flex-direction: column;
-  color: #fff;
-  gap: 10px;
+  gap: 20px;
 }
 
 #left_footer i{
 font-size: 30px;
 }
 
+#left_footer strong{
+  display:inline-block;
+  font-size: 18px;
+}
+
 #left_footer span{
-margin-left:1%;
-font-size: 16px;
+  margin-left:2%;
+  font-size: 16px;
 }
 
 #left_footer #social_media{
 display: flex;
-gap: 10px;
+gap: 20px;
 }
 
-.fa-phone{
-color:#f7673c;
+#left_footer .fa-phone{
+color:grey;
+font-size: 20px;
 }
 
 .fa-spotify{
@@ -426,12 +437,28 @@ color: blue;
 footer{
   display: flex;
   flex-direction: column;
-  /* gap: 50px; */
+  gap: 30px;
 }
 #right_footer{
   width:100%;
+  border-right: 0;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.308);
 }
 #left_footer{
   width:100%;
 }
+}
+
+/* Chat Section */
+#whatsapp{
+  position: fixed;
+  bottom: 30px;
+  right: 6px;
+  z-index: 9;
+}
+
+.fa-whatsapp{
+ font-size: 50px;
+color:green;
 }
