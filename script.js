@@ -35,7 +35,8 @@ let seeMore = document.getElementById("see_more");
 let init = 3;
 
 seeMore.onclick = () => {
-  let hiddenData = [...document.querySelectorAll(".work_section .works_wrapper .work_card")];
+  let hiddenData = [...document.querySelectorAll(".work_section .work_wrapper .work_grid .work_card")];
+  console.log('hiddenData:', hiddenData.length)
   for (var i = init; i < init + 3; i++) {
     hiddenData[i].style.display = "grid";
 
@@ -49,6 +50,26 @@ seeMore.onclick = () => {
 };
 
 
-// Chat functionality
-// const whatsapp = document.getElementById('whatsapp')
-// whatsapp
+// For Slider
+let index = 0;
+function showSlides() {
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  index++;
+  if (index > slides.length) {
+    index = 1
+  }
+
+  for (let i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[index-1].style.display = "block";  
+  dots[index-1].className += " active";
+
+  setTimeout(showSlides, 3000);
+}
+showSlides();

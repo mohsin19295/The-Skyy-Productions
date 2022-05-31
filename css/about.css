@@ -1,0 +1,20 @@
+.about_section{
+  box-shadow: 0 5px 5px #3d3d3d;
+  padding: 0 70px 10px 70px;
+}
+
+.about_wrapper {
+  border: 1px solid transparent;
+}
+
+.about_content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about_content p {
+  color: #fff;
+  line-height: 1.5;
+  font-size: 18px;
+}

@@ -1,0 +1,27 @@
+/* .course_wrapper {
+    border: 1px solid #fff;
+} */
+
+.course_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+    gap: 60px;
+}
+
+.course_card img {
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0.5);
+}
+
+@media screen and (max-width: 1300px) {
+    .course_grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .course_grid {
+        grid-template-columns: 1fr;
+    }
+}
