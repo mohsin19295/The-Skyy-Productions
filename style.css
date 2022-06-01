@@ -9,9 +9,7 @@ main{
   background-color: #131313;
 }
 
-main .home_section,
-main .work_section,
-main .course_section {
+main .home_section{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,7 +17,7 @@ main .course_section {
   margin-bottom: 1rem;
   box-shadow: 0 5px 5px #3d3d3d;
   border: 0;
-  padding: 0 70px 10px 70px;
+  padding: 0 50px 10px 50px;
   /* border: 1px solid red; */
 }
 
@@ -59,20 +57,13 @@ main .course_section {
 }
 
 /* h1 Tag style */
-main .typewriter h1 {
-  text-align: center;
+/* main .typewriter h1 {
   color: #fff;
   text-align: center;
-  font-size: 50px;
-  font-weight: 800;
-  margin: 70px 0 30px 0;
-}
-
-
-main .home_section .typewriter h1 {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 600;
-}
+  margin: 70px 0 30px 0;
+} */
 
 
 

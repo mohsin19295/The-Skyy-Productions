@@ -1,0 +1,24 @@
+ .typewriter{
+    display: block;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    margin-top: 90px;
+    /* border: 1px solid red; */
+}
+
+.typewriter h2 {
+    background-image: url(../images/color.jpg);
+    background-size: 10% 150px;
+    background-repeat: repeat;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+}
