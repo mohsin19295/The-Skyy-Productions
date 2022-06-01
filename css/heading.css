@@ -6,6 +6,7 @@
     transform: translate(-50%, -50%);
     color: #fff;
     margin-top: 90px;
+    text-align: center;
     /* border: 1px solid red; */
 }
 
@@ -18,11 +19,9 @@
     -webkit-background-clip: text;
     color: transparent;
 
-    text-align: center;
-    font-size: 35px;
     font-weight: 600;
 }
 
 .typewriter h1{
-    text-align: center;
-}
+    text-align: justify-center;
+    }
