@@ -67,15 +67,16 @@
 }
 
 #see_more{
-  width: 100px;
+  max-width: 100px;
   padding: 10px;
   background: linear-gradient(to right, #000, #161718);
   color: #f5f5f5;
-  font-weight: 600;
-  font-size: 20px;
+  font-weight: 500;
+  font-size: 18px;
   border:0;
   border-radius: 5px;
   cursor: pointer;
   margin: auto;
   margin-top: 3%;
+  text-align: center;
 }
