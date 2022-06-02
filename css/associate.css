@@ -16,12 +16,17 @@
   }
   
   .dot {
-    height: 15px;
-    width: 15px;
+    height: 12px;
+    width: 12px;
     margin: 0 2px;
-    background-color: #f5f5f5;
+    background-color: rgba(255, 255, 255, 0.904);
     border-radius: 50%;
     display: inline-block;
+    transition: red 0.5s ease;
+  }
+
+  .active {
+    background-color: #adadad;
   }
   
   .mySlides {

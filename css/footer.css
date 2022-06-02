@@ -14,7 +14,7 @@ footer {
 
 #right_footer {
   /* padding: 0 20px; */
-  width: 55%;
+  width: 58%;
   display: flex;
   flex-direction: column;
   color: #fff;
@@ -23,11 +23,15 @@ footer {
   font-size: 15px;
 }
 
+#right_footer p{
+  text-align: justify;
+}
+
 #left_footer {
   border-left: 1px solid rgba(255, 255, 255, 0.308);
   padding: 0 20px;
   color: #fff;
-  width: 42%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   gap: 20px;
