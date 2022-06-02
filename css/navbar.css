@@ -21,12 +21,18 @@ nav {
   margin: 0 auto;
 }
 
-#nav_logo {
-  display: flex;
+.home_logo {
+  display:flex;
+  justify-content: center;
   align-items: center;
   cursor: pointer;
-  text-decoration: none;
-  font-size: 2rem;
+  padding-left: 25px;
+}
+
+.home_logo img{
+  max-width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
 
 #nav_menu {
@@ -34,7 +40,6 @@ nav {
   align-items: center;
   list-style: none;
 }
-
 
 .nav_links {
   color: #fff;
@@ -62,7 +67,6 @@ nav {
 
   #nav_menu {
     display: grid;
-    grid-template-columns: auto;
     margin: 0;
     width: 100%;
     position: absolute;
@@ -79,10 +83,6 @@ nav {
     transition: all 0.5s ease;
     z-index: 99;
     height: 35vh;
-  }
-
-  #nav_logo {
-    padding-left: 25px;
   }
 
   .nav_toggle .bar {
