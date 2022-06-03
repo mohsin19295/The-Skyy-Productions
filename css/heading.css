@@ -5,7 +5,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
-    margin-top: 90px;
+    margin-top: 70px;
+    margin-bottom: 20px;
     text-align: center;
     /* border: 1px solid red; */
 }

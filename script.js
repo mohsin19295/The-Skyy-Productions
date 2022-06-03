@@ -49,7 +49,6 @@ seeMore.onclick = () => {
   init += 3;
 };
 
-
 // For Slider
 let index = 0;
 function showSlides() {
@@ -73,3 +72,7 @@ function showSlides() {
   setTimeout(showSlides, 3000);
 }
 showSlides();
+
+// For smooth paading top after clicking on any section
+let navigationHeight = document.querySelector("nav").offsetHeight
+document.documentElement.style.setProperty("--scroll-padding", `${navigationHeight}px`)
