@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Pending</h1>
+    <p>Course:- points then image-wp then next page</p>
+
+    <p>Review:- "https://www.google.com/search?q=the+skyy+productions+krisna+nagar&sxsrf=ALiCzsY8TKjYI-JFmlX_wqY8-c6LFGyunQ%3A1654436999379&ei=h7ScYpvfFquI4-EP-fut6Ak&ved=0ahUKEwjbvpqNupb4AhUrxDgGHfl9C50Q4dUDCA4&uact=5&oq=the+skyy+productions+krisna+nagar&gs_lcp=Cgdnd3Mtd2l6EAMyBwghEAoQoAEyBwghEAoQoAEyBwghEAoQoAE6BwgAEEcQsAM6BAgjECc6CwguEMcBENEDEJECOgUIABCRAjoLCAAQgAQQsQMQgwE6BQgAEIAEOhEILhCABBCxAxCDARDHARDRAzoOCC4QgAQQsQMQxwEQ0QM6CwguEIAEELEDEIMBOggIABCABBCxAzoLCC4QgAQQxwEQ0QM6CAguEIAEELEDOggIABCxAxCDAToLCC4QgAQQsQMQ1AI6CwgAELEDEIMBEJECOgUILhCABDoICC4QsQMQgwE6CwguEIAEEMcBEK8BOhEILhCABBCxAxCDARDHARCvAToICC4QgAQQ1AI6BwgAEIAEEAo6CgguEMcBEK8BEAo6AggmOgYIABAeEBY6CAgAEB4QFhAKOgUIIRCgAToICCEQHhAWEB06BAghEBVKBAhBGABKBAhGGABQtQlYh_QBYPP3AWgDcAF4AIABhwKIAakxkgEGMC4yNi44mAEAoAEByAEIwAEB&sclient=gws-wiz#lrd=0x390cfd9499f362dd:0x7b95332972376f78,1,,,"</p>
+
+</body>
+
+</html>
+
+<script>
+    let key = "AIzaSyAMvxqlq4mgxMlNuLkbks0DI3aMdwLsWsA"
+    let url = `https://youtube.googleapis.com/youtube/v3/playlists?part=snippet%2CcontentDetails&channelId=UCWfyzFT4WARHJu7G1tFSlAw&maxResults=25&key=${key}`
+
+
+    fetch(url)
+        .then(res => (res.json()))
+        .then(data => console.log(data))
+        .catch(err => console.log(err))
+
+</script>
