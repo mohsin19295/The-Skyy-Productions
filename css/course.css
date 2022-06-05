@@ -1,4 +1,4 @@
-.course_section{
+/* .course_section{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,14 +8,10 @@
     border: 0;
     padding: 0 50px 10px 50px;
 }
-/* .course_wrapper {
-    border: 1px solid #fff;
-} */
 
  .course_grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /* justify-content: space-between; */
     gap: 60px;
 }
 
@@ -34,4 +30,53 @@
     .course_grid {
         grid-template-columns: 1fr;
     }
+} */
+
+.course_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    box-shadow: 0 5px 5px #3d3d3d;
+    border: 0;
+    padding: 0 50px 10px 50px;
+}
+
+.course_container {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid red;
+    gap: 50%;
+}
+
+.course_container .course_card{
+    color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border: 1px solid red;
+}
+
+.course_container .certificate{
+    flex-direction: column;
+    color: #000;
+    background-color: #f5f5f5;
+    background-image: linear-gradient(to bottom, black, white);
+    background-size: 50px 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.course_container .certificate > h1{
+    font-size: 35px;
+}
+
+.timer-box{
+justify-content: center;
+width: 100%;
+}
+#timer{
+   font-size: 50px;
 }
