@@ -104,3 +104,9 @@ let timer = setInterval(function () {
 
     document.getElementById("timer").innerHTML = `${hours}h : ${minutes}m : ${seconds}s`
 }, 1000);
+
+// Refering the course-page
+let coursePageBtn = document.getElementById("check-course-btn");
+coursePageBtn.addEventListener("click", function(){
+  window.location.href = "./course/course.html"
+})
