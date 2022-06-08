@@ -113,7 +113,7 @@
 @media screen and (max-width: 1046px) {
   .iso-qr-brit img{
     max-width: 150px;
-    height: max(100%, 150px);
+    height: min(100%, 150px);
   }
 }
 
@@ -135,8 +135,8 @@
     width: 100%;
   }
   .iso-qr-brit img{
-    max-width: 150px;
-    height: max(100%, 150px);
+    max-width: 135px;
+    height: min(100%, 135px);
   }
 
   .about_map iframe{
@@ -151,7 +151,7 @@
 @media screen and (max-width: 600px){
   .iso-qr-brit img{
     max-width: 120px;
-    height: max(100%, 120px);
+    height: min(100%, 120px);
   }
   .about_map iframe{
     width: 100%;
@@ -159,10 +159,6 @@
   }
 }
 @media screen and (max-width: 484px){
-  .iso-qr-brit img{
-    max-width: 150px;
-    height: min(100%, 150px);
-  }
   
   .iso-qr-brit{
     row-gap: 20px;
