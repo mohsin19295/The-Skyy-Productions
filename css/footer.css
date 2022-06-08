@@ -161,7 +161,7 @@
 @media screen and (max-width: 484px){
   .iso-qr-brit img{
     max-width: 150px;
-    height: max(100%, 150px);
+    height: min(100%, 150px);
   }
   
   .iso-qr-brit{
