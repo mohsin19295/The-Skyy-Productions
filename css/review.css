@@ -1,3 +1,8 @@
+.review_section{
+    box-shadow: 0 5px 5px #3d3d3d;
+    padding: 0 50px;
+}
+
 .review_wrapper {
     width: 100%;
     overflow: hidden;
@@ -6,7 +11,6 @@
 }
 
 .elfsight-app-d0ab6606-2d70-4147-b0ea-96e5e1464df8 {
-    padding: 0 50px;
     color: #fff;
     position: relative;
     left: 50%;
