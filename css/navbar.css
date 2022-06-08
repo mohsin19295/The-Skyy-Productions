@@ -102,14 +102,9 @@ nav {
   }
 
   .nav_items {
-    width: 25px;
+    /* width: 25px; */
+    width: min(100%, 150px);
     margin:auto;
-  }
-
-  .nav_links {
-    text-align: center;
-    width: 100%;
-    display: table;
   }
 
   #menu-bar {

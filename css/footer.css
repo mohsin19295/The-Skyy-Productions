@@ -53,8 +53,12 @@
   gap: 10px;
 }
 
-#left_footer i {
-  font-size: 25px;
+#social_media i {
+  font-size: 27px;
+}
+
+#social_media img{
+  width: 25px;
 }
 
 #left_footer strong {
@@ -70,7 +74,10 @@
 #left_footer #social_media {
   display: flex;
   gap: 20px;
+  align-items: center;
 }
+
+
 
 #left_footer .fa-phone {
   color: grey;
