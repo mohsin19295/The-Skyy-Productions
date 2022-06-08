@@ -78,32 +78,44 @@ let navigationHeight = document.querySelector("nav").offsetHeight
 document.documentElement.style.setProperty("--scroll-padding", `${navigationHeight}px`)
 
 
-// For Timer
-let today = new Date(); 
-let nextDate = (today.getMonth() + 1) + '-' + (today.getDate() + 1) + '-' + today.getFullYear() 
+// For single user timer
+if (localStorage.getItem("count_timer")) {
+  count_timer = localStorage.getItem("count_timer");
+} else {
+  count_timer = 86400;
+}
 
-let countDownDate = new Date(nextDate).getTime(); 
+function returnValue(num) {
+  let hours = Math.floor(num / 3600);
+  num -= hours * 3600;
+  let minutes = Math.floor(num / 60);
+  let seconds = num - minutes * 60;
 
-let timer = setInterval(function () {
-    let now = new Date().getTime();
-    let distance = countDownDate - now; 
+  if (hours < 10) {
+      hours = "0" + hours;
+  }
+  if (minutes < 10) {
+      minutes = "0" + minutes;
+  }
+  if (seconds < 10) {
+      seconds = "0" + seconds;
+  }
+  return `${hours}h : ${minutes}m : ${seconds}s`
+}
 
-    let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+function countDownTimer() {
+  document.getElementById("timer").innerHTML = returnValue(count_timer)
 
-    if (hours < 10){
-      hours = "0"+hours;
-    }
-    if (minutes < 10){
-      minutes = "0"+minutes;
-    }
-    if (seconds < 10){
-      seconds = "0"+seconds;
-    }
-
-    document.getElementById("timer").innerHTML = `${hours}h : ${minutes}m : ${seconds}s`
-}, 1000);
+  if (count_timer <= 0) {
+      document.getElementById("timer").innerHTML = "Sorry Offer expired"
+  } else {
+      count_timer = count_timer - 1;
+      returnValue(count_timer)
+      localStorage.setItem("count_timer", count_timer);
+      setTimeout("countDownTimer()", 1000);
+  }
+}
+setTimeout("countDownTimer()", 1000);
 
 // Refering the course-page
 let coursePageBtn = document.getElementById("check-course-btn");
