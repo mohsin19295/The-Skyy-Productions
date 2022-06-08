@@ -1,0 +1,14 @@
+.review_wrapper {
+    width: 100%;
+    overflow: hidden;
+    margin-top: -50px;
+    padding-bottom: 10px;
+}
+
+.elfsight-app-d0ab6606-2d70-4147-b0ea-96e5e1464df8 {
+    padding: 0 50px;
+    color: #fff;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 50px)
+}
