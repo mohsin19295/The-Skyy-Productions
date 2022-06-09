@@ -71,7 +71,7 @@
 }
 
 .timer-box{
-    padding: 0 50px;
+    padding: 0 45px;
 }
 
 .timer-box .inner-timer-box{
@@ -87,7 +87,7 @@
 .inner-timer-box p{
     color: #fff;
     text-align: center;
-    font-size: 36px;
+    font-size: 40px;
     font-weight: bold;
 }
 
@@ -95,14 +95,24 @@
     color:red;
 }
 
+@media screen and (max-width:1200px){
+    .timer-box{
+        padding: 0 34px;
+    }
+
+    .inner-timer-box p{
+        font-size: 34px;
+    }
+}
 @media screen and (max-width:1066px){
     .course_section {
         padding: 0 100px 10px 100px;
     }
-
+    
     .timer-box{
-        padding: 0 40px;
+        padding: 0 30px;
     }
+
 }
 
 @media screen and (max-width: 966px){
@@ -113,9 +123,13 @@
     .course_wrapper .certificate-box{
         width: 45%;
     }
-
+    
     .timer-box{
-        padding: 0 30px;
+        padding: 0 28px;
+    }
+
+    .inner-timer-box p{
+        font-size: 30px;
     }
 
     .inner-certificate-box h1{
@@ -123,7 +137,7 @@
     }
 }
 
-@media screen and (max-width: 825px){
+@media screen and (max-width: 832px){
     .course_section {
         padding: 0 60px 10px 60px;
     }
@@ -159,6 +173,11 @@
 }
 
 @media screen and (max-width: 710px){
+    .certificate-box .inner-certificate-box{
+        background-size: 50px 100%;
+        background-position: 95%;
+    }
+
     .course_section {
         padding: 0 50px 10px 50px;
     }
@@ -218,13 +237,6 @@
     .inner-timer-box h2{
         font-size: 25px;
     } 
-}
-
-@media screen and (max-width: 400px){
-    .certificate-box .inner-certificate-box{
-        background-size: 50px 100%;
-        background-position: 95%;
-    }
 }
 
 @media screen and (max-width:320px){

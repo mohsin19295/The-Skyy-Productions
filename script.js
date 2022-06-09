@@ -110,7 +110,7 @@ function countDownTimer() {
       document.getElementById("timer").innerHTML = "Sorry Offer expired"
   } else {
       count_timer = count_timer - 1;
-      returnValue(count_timer)
+      // returnValue(count_timer-1)
       localStorage.setItem("count_timer", count_timer);
       setTimeout("countDownTimer()", 1000);
   }
