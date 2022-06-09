@@ -60,7 +60,7 @@
     border: 0;
     color: #fff;
     cursor: pointer;
-    background-color: rgb(90, 22, 90);
+    background-color: #5a165a;
 }
 
 .course_section #check-course-btn{
@@ -69,6 +69,25 @@
     margin: 30px auto 0;
     font-size: 17px;
 }
+
+.course_section #apply-now-btn{
+    animation: glowing 1500ms infinite;
+}
+
+@keyframes glowing {
+    0% {
+      background-color: #5a165a;
+      -webkit-box-shadow: 0 0 0 2px #5a165a;
+    }
+    50% {
+      background-color: #774177;
+      -webkit-box-shadow: 0 0 15px #774177;
+    }
+    100% {
+      background-color: #5a165a;
+      -webkit-box-shadow: 0 0 5px #5a165a;
+    }
+  }
 
 .timer-box{
     padding: 0 45px;
