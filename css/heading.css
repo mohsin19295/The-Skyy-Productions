@@ -12,17 +12,28 @@
 }
 
 .typewriter h2 {
-    background-image: url(../images/color.jpg);
-    background-size: 10% 150px;
-    background-repeat: repeat;
-
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-
+    text-align: justify-center;
     font-weight: 600;
+    animation: glow 3s ease-in-out infinite alternate;
 }
 
-.typewriter h1{
-    text-align: justify-center;
+@keyframes glow {
+    from {
+        color: #fff;
+        text-shadow: 0 0 5px #f08888, 0 0 8px #585858, 0 0 12px #6651c4, 0 0 15px #b18afa, 0 0 18px #b18afa, 0 4px 0 #60e6cf, 0 3px 0 #8543ff;
     }
+
+    to {
+        color: #000;
+        text-shadow: 0 0 5px #abbdba, 0 0 8px #e2e2d1, 0 0 12px #aaaaa7, 0 0 15px #cecad6, 0 0 18px #ebe8f1, 0 4px 0 #ece7f5, 0 3px 0 #d5d3d8;
+    }
+}
+
+/* .home_wrapper .typewriter h2{
+    line-height: 1.5;
+    border: 1px solid red;
+    }
+
+    @media screen and (max-width: 780px){
+
+    } */
