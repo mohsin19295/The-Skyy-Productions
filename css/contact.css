@@ -14,7 +14,7 @@
 
 .iso-qr-brit{
   display: flex;
-  justify-content: space-around;
+  justify-content:flex-start;
   flex-wrap: wrap;
   gap: 10px;
 }
@@ -53,12 +53,35 @@
   gap: 10px;
 }
 
-#social_media i {
-  font-size: 27px;
+#left_footer img{
+  display: flex;
+  justify-content:center;
+  align-items:center;
 }
 
-#social_media img{
+.social_media i, .icmr-logo {
+  font-size: 27px;
+  width: 27px;
+}
+
+.playstore-logo img{
   width: 25px;
+}
+
+.icmr-logo img{
+width: 100%;
+border-radius: 50%;
+}
+
+#left_footer .playstore-logo{
+display: flex;
+align-items: center;
+}
+
+#left_footer .social_media {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
 }
 
 #left_footer strong {
@@ -71,13 +94,6 @@
   font-size: 15px;
 }
 
-#left_footer #social_media {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
-
-
 
 #left_footer .fa-phone {
   color: grey;
@@ -85,11 +101,19 @@
 }
 
 .fa-spotify {
-  color: green;
+  color: #1DB954;
 }
 
 .fa-youtube {
-  color: red;
+  color: #FF0000;
+}
+
+.fa-instagram {
+  color:#8a3ab9;
+}
+
+.fa-facebook {
+  color: #4267B2;
 }
 
 .fa-google-play {
