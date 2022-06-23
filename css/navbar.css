@@ -4,11 +4,12 @@ nav {
   align-items: center;
   position: sticky;
   top: 0;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 2rem;
   box-shadow: 0 5px 5px #3d3d3d;
   z-index: 999;
   background-color: #222121;
+
 }
 
 #nav_container {
@@ -85,7 +86,7 @@ nav {
   }
 
   #nav_menu.active {
-    background: #131313;
+    background: #222121;
     top: 100%;
     opacity: 1;
     transition: all 0.5s ease;

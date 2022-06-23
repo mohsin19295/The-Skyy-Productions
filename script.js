@@ -118,7 +118,6 @@ let id = "UCWfyzFT4WARHJu7G1tFSlAw"
 
 let video = document.querySelector(".work_card");
 let yt_box = document.querySelector(".yt_box");
-let wrapper = document.querySelector(".work_wrapper");
 
 let loadmoreDiv = document.createElement("button");
 loadmoreDiv.className = "see_more";
@@ -157,7 +156,6 @@ const myFun = () => {
         single.append(iframeDiv, style);
         video.append(single);
         yt_box.append(video, loadmoreDiv);
-        wrapper.append(yt_box);
       });
     })
     .catch((err) => console.log(err));

@@ -1,14 +1,12 @@
- .typewriter{
+section .typewriter{
     display: block;
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
-    margin-top: 70px;
-    margin-bottom: 20px;
+    margin: 3rem 0;
     text-align: center;
-    /* border: 1px solid red; */
 }
 
 .typewriter h2 {
@@ -28,12 +26,3 @@
         text-shadow: 0 0 5px #abbdba, 0 0 8px #e2e2d1, 0 0 12px #aaaaa7, 0 0 15px #cecad6, 0 0 18px #ebe8f1, 0 4px 0 #ece7f5, 0 3px 0 #d5d3d8;
     }
 }
-
-/* .home_wrapper .typewriter h2{
-    line-height: 1.5;
-    border: 1px solid red;
-    }
-
-    @media screen and (max-width: 780px){
-
-    } */
