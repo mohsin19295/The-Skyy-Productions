@@ -111,15 +111,15 @@ coursePageBtn.addEventListener("click", function () {
 });
 
 // For YouTube Data
-// let key = "AIzaSyATSP2ynUU02GMJu-JkNL49w6bU9UD9_F8";
-var key = config.API_KEY;
-var id = config.CHANNEL_ID;
+let key = "AIzaSyATSP2ynUU02GMJu-JkNL49w6bU9UD9_F8";
+let id = "UCWfyzFT4WARHJu7G1tFSlAw"
+// let key = config.API_KEY;
+// let id = config.CHANNEL_ID;
 
 let video = document.querySelector(".work_card");
 let yt_box = document.querySelector(".yt_box");
 let wrapper = document.querySelector(".work_wrapper");
 
-let head = document.querySelector(".head");
 let loadmoreDiv = document.createElement("button");
 loadmoreDiv.className = "see_more";
 loadmoreDiv.innerHTML = "See More";
