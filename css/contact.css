@@ -182,9 +182,11 @@ align-items: center;
     height: 100%;
   }
 }
-@media screen and (max-width: 484px){
-  
-  .iso-qr-brit{
-    row-gap: 20px;
-  }
+@media screen and (max-width: 414px){
+.iso-qr-brit{ 
+  justify-content:center;
+}
+.contact_wrapper{
+  padding: 0 25px;
+}
 }

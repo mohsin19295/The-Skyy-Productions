@@ -136,7 +136,7 @@ const myFun = () => {
         style.className = "youtube_style";
 
         let logo = document.createElement("img");
-        logo.src = "https://via.placeholder.com/50";
+        logo.src = "images/logo.jpg";
         let p = document.createElement("p");
         p.innerHTML = e.snippet?.title;
         style.append(logo, p);

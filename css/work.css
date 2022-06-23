@@ -18,7 +18,7 @@
 
 .work_card {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1rem;
 
 }
@@ -77,4 +77,11 @@
   margin: auto;
   margin-top: 3%;
   text-align: center;
+}
+
+
+@media screen and (max-width:414px){
+  .work_section{
+    padding: 0 25px 5px 25px;
+  }
 }

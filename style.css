@@ -7,7 +7,7 @@
 }
 
 main{
-  background-color: #131313;
+  background-color: #222121;
 }
 
 main .home_section{
@@ -19,6 +19,7 @@ main .home_section{
   box-shadow: 0 5px 5px #3d3d3d;
   border: 0;
   padding: 0 50px 10px 50px;
+  /* border: 1px solid #fff; */
 }
 
 /* Home section */
@@ -53,4 +54,10 @@ main .home_section{
 .fa-whatsapp {
   font-size: 50px;
   color: green;
+}
+
+@media screen and (max-width: 414px){
+  main .home_section{
+    padding: 0 25px;
+  }
 }

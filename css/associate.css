@@ -1,6 +1,5 @@
 
  .associate_section {
-    
     padding: 0 50px;
     box-shadow: 0 5px 5px #3d3d3d;
     /* border: 1px solid red; */
@@ -93,4 +92,11 @@
   
   #slider_dots {
     text-align: center;
+  }
+
+  @media screen and (max-width:414px){
+    
+ .associate_section {
+  padding: 0 25px;
+}
   }

@@ -4,7 +4,7 @@
     justify-content: center;
     box-shadow: 0 5px 5px #3d3d3d;
     border: 0;
-    padding: 0 150px 10px 150px;
+    padding: 0 50px 10px 50px;
 }
 
 .course_wrapper {
@@ -256,6 +256,12 @@
     .inner-timer-box h2{
         font-size: 25px;
     } 
+}
+
+@media screen and (max-width: 414px){
+    .course_section {
+        padding: 0 25px 5px 25px;
+    }
 }
 
 @media screen and (max-width:320px){
