@@ -111,7 +111,7 @@ coursePageBtn.addEventListener("click", function () {
 });
 
 // For YouTube Data
-let key = "AIzaSyATSP2ynUU02GMJu-JkNL49w6bU9UD9_F8";
+let key = "AIzaSyDPtfOgWwF6enWJGfnsohAsS9546sQNUkc";
 let id = "UCytbmgRnooFVMIQ84CvGLvA"
 // let key = config.API_KEY;
 // let id = config.CHANNEL_ID;
@@ -128,6 +128,7 @@ const myFun = () => {
   fetch(url)
     .then((res) => res.json())
     .then((res) => {
+      console.log('res:', res)
       res.items.map((e, i) => {
         let single = document.createElement("div");
         single.className = "youtube_video";
