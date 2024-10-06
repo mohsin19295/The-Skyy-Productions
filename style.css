@@ -6,13 +6,31 @@
   scroll-padding-top: var(--scroll-padding, 100px)
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+
 main{
   background-color: #222121;
 }
 
 main section{
-  padding: 0 50px;
+  padding: 3rem 3rem 2rem;
   box-shadow: 0 0px 3px #696969;
+  /* border: 1px solid red */
+}
+
+@media screen and (max-width: 768px){
+  main section{
+    padding: 2rem 2rem 1rem;
+  }
+}
+
+@media screen and (max-width: 480px){
+  main section{
+    padding: 2rem 1rem 1rem;
+  }
 }
 
 main section > div{
@@ -29,6 +47,29 @@ section .wrapper{
 /* Home section */
 main .home_section{
   box-shadow: 0 0px 0px #696969;
+}
+
+.home_wrapper{
+  height: 70vh;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+
+  h2{
+    font-size: 5rem;
+  }
+}
+
+
+@media screen and (max-width: 768px){
+  .home_wrapper{
+    gap: 2rem;
+
+    h2{
+      font-size: 3rem;
+    }
+  }
 }
 
 .home_logo_img {
@@ -55,10 +96,4 @@ main .home_section{
 .fa-whatsapp {
   font-size: 50px;
   color: green;
-}
-
-@media screen and (max-width: 480px){
-  main section{
-    padding: 0 25px;
-  }
 }

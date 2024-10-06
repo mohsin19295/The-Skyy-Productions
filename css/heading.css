@@ -1,18 +1,23 @@
 section .typewriter{
-    display: block;
+    /* display: block;
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
     margin: 3rem 0;
+    text-align: center; */
     text-align: center;
 }
 
 .typewriter h2 {
-    text-align: justify-center;
-    font-weight: 600;
+    animation: glow-reverse 3s ease-in-out infinite alternate;
+    -webkit-animation: glow-reverse 3s ease-in-out infinite alternate;
+}
+
+.typewriter h1 {
     animation: glow 3s ease-in-out infinite alternate;
+    -webkit-animation: glow 3s ease-in-out infinite alternate;
 }
 
 @keyframes glow {
@@ -25,4 +30,26 @@ section .typewriter{
         color: #000;
         text-shadow: 0 0 5px #abbdba, 0 0 8px #e2e2d1, 0 0 12px #aaaaa7, 0 0 15px #cecad6, 0 0 18px #ebe8f1, 0 4px 0 #ece7f5, 0 3px 0 #d5d3d8;
     }
+}
+
+@keyframes glow-reverse {
+    from {
+        color: #000;
+        text-shadow: 0 0 5px #abbdba, 0 0 8px #e2e2d1, 0 0 12px #aaaaa7, 0 0 15px #cecad6, 0 0 18px #ebe8f1, 0 4px 0 #ece7f5, 0 3px 0 #d5d3d8;
+        transform: scale(0.8);
+        -webkit-transform: scale(0.8);
+        -moz-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        -o-transform: scale(0.8);
+}
+
+    to {
+        color: #fff;
+        text-shadow: 0 0 5px #f08888, 0 0 8px #585858, 0 0 12px #6151aa, 0 0 15px #9e81d4, 0 0 18px #b594f2, 0 4px 0 #86ded0, 0 3px 0 #9a72e4;
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+}
 }

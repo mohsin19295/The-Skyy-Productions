@@ -74,10 +74,3 @@
   margin-top: 3%;
   text-align: center;
 }
-
-
-@media screen and (min-width: 280px) and (max-width: 414px){
-  .work_section{
-    padding: 0 25px 5px 25px;
-  }
-}

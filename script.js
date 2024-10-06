@@ -104,7 +104,7 @@ setInterval(function () {
   }
 }, 100);
 
-// Refering the course-page
+// Referring the course-page
 let coursePageBtn = document.getElementById("check-course-btn");
 coursePageBtn.addEventListener("click", function () {
   window.location.href = "./course/course.html";

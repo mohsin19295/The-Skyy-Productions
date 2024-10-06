@@ -11,9 +11,3 @@
     left: 50%;
     transform: translate(-50%, 50px)
 }
-
-@media screen and (max-width:414px){
-    .review_section{
-        padding: 0 25px;
-    }
-}
